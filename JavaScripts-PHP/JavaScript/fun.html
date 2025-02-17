@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>JavaScript</title>
+    <script language="javascript" type="text/javascript">
+        function sayHello(name,age){
+            if(name==""||age=="")return;
+            document.write("Hello world!"+"My name:"+name+" and age: "+age);
+        }    
+        function MouseOver(){
+            document.images["img1"].src="icons8-logo-48.png.png"
+        }    
+        function MouseOut(){
+            document.images["img1"].src="icons8-logo-50.png"
+        }
+        function Load(){
+            document.images["img1"].src="icons8-logo-50.png"
+        }
+    </script>
+</head>
+<body onload="Load()">
+    <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()">
+    <p>Click the following button to call function</p>
+    <form>
+        <input name="t1" placeholder="Enter Name"/><br/>
+        <input name="t2" placeholder="Enter Age"/><br/>
+        <input type="button" onclick="sayHello(t1.value,t2.value)" value="say Hello">
+    </form>
+</body>
+</html>

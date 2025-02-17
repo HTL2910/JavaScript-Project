@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>JavaScript</title>
+    <script language="javascript" type="text/javascript">
+        function tryCatch()
+        {
+            var a=100;
+            try
+            {
+                var s=a.toUpperCase();
+                alert("value of a variable is: "+a);
+            }
+            catch(e)
+            {
+                alert("Error");
+            }
+            finally
+            {
+                alert("Finally block will always execute!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>CLick the following to see result:</p>
+    <form>
+        <input type="button" value="Click" onclick="tryCatch();"/>
+    </form>
+</body>
+</html>
